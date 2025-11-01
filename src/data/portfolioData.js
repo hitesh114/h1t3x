@@ -1,0 +1,192 @@
+export const portfolioData = {
+  personal: {
+    username: "H1t3X",
+    name: "S Hitesh Borha",
+    title: "Cybersecurity Enthusiast",
+    bio: [
+      "Motivated and detail-oriented tech professional with hands-on experience in software development, cybersecurity, and project coordination. Proficient in React JS, HTML5, CSS3, Linux, and API integration. Successfully developed a customizable website framework at EappZ, focusing on reusable components and responsive design.",
+      "Key cybersecurity projects include a DDoS detection model for IoT networks and a smart voting system to ensure data integrity. Certified in Google Foundations of Cybersecurity, with strong skills in software testing, debugging, and cross-functional collaboration.",
+    ],
+    avatar: {
+      type: "image",
+      src: "assets/images/avatar1.png",
+      alt: "Hitesh Borha Profile Picture",
+    },
+    stats: [],
+  },
+  experience: [
+    {
+      title: "Junior Software Engineer",
+      company: "EappZ",
+      duration: "2024 - 2025",
+      location: "Remote",
+      description: [
+        "Assisted in building a customizable website framework, contributing to both front-end structure and UI logic.",
+        "Engineered 15+ reusable React components with HTML and CSS, integrated into the existing website framework, enhancing user interface consistency and reducing front-end development time by approximately 10 hours per week.",
+        "Conducted manual testing and debugging, identifying and reporting software bugs to ensure code quality and reliability.",
+        "Collaborated with senior developers to implement new features and maintain project consistency with development standards.",
+        "Participated in code reviews, improving understanding of clean code practices and team collaboration workflows.",
+        "Worked in agile development sprints, contributing to planning, stand-ups, and retrospectives alongside senior engineers.",
+      ],
+      technologies: [
+        "Problem Solving",
+        "React.JS",
+        "Team Collaboration",
+        "CSS3",
+        "HTML5",
+      ],
+    },
+    {
+      title: "City Lead",
+      company: "Viral Fisson",
+      duration: "2023 - 2024",
+      location: "Remote",
+      description: [
+        "Led a city-wide team of 200+ student creators to execute brand promotion campaigns for top national and international brands.",
+        "Strategized and coordinated digital and on-ground marketing campaigns, driving high engagement and ROI for partner brands.",
+        "Managed campaign logistics, creator communication, and performance tracking using tools like Microsoft Excel, ensuring seamless execution.",
+        "Recognized with the Best Performing City Award for outstanding leadership, team coordination, and campaign success.",
+        "Built and nurtured a strong creator community, fostering collaboration, creativity, and measurable impact in the youth marketing space.",
+      ],
+      technologies: [
+        "Communication",
+        "Leadership",
+        "Public Speaking",
+        "Easily Adaptable",
+        "Social Media Marketing",
+      ],
+    },
+  ],
+  certifications: [
+    {
+      name: "Networking Basics",
+      organization: "CISCO",
+      dateObtained: "2025",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "assets/images/Networking_Basics_Badge.png",
+        alt: "Networking_Basics_Badge",
+      },
+      certificationLink:
+        "https://www.credly.com/badges/e591fa8f-8900-4783-9210-b4820a63aed3/public_url",
+    },
+    {
+      name: "Introduction to Cybersecurity",
+      organization: "Cisco",
+      dateObtained: "2025",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "assets/images/Intro_cs.png",
+        alt: "Cybersecurity Certification Badge",
+      },
+      certificationLink:
+        "https://www.credly.com/badges/d1af2823-f9f5-47b3-b3d5-a3916716bd9f",
+    },
+    {
+      name: "Foundation to Cybersecurity",
+      organization: "Google",
+      dateObtained: "2024",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "assets/images/Google_icon.jpg",
+        alt: "Cybersecurity Certification Badge",
+      },
+      certificationLink:
+        "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
+    },
+  ],
+  terminalCommands: [
+    "cat /etc/passwd",
+    "nmap -sS target.com",
+    'sqlmap -u "http://target.com"',
+    "hydra -l admin -P passwords.txt ssh://target",
+    "msfconsole",
+    "burpsuite --professional",
+  ],
+  projects: [
+    {
+      title: "VulnScanner Pro",
+      description:
+        "Advanced vulnerability scanner with custom exploit modules and automated reporting capabilities.",
+      image: {
+        type: "icon",
+        src: "fa-solid fa-shield-halved",
+        alt: "VulnScanner Pro Screenshot",
+      },
+      technologies: ["Python", "Nmap", "SQLMap"],
+      links: { live: "#", github: "#" },
+    },
+  ],
+  skills: {
+    categoryTitle: "Top Skills",
+    technical: [
+      { name: "Cybersecurity", level: 75 },
+      { name: "Security Information and Event Management (SIEM)", level: 68 },
+      { name: "Network Vulnerabilities", level: 85 },
+      { name: "HTML5 & CSS3", level: 78 },
+    ],
+    tags: [
+      "React.JS",
+      "HTML5",
+      "CSS3",
+      "Linux",
+      "API Integration",
+      "Problem Solving",
+      "Team Collaboration",
+      "Communication",
+      "Leadership",
+      "Public Speaking",
+      "Easily Adaptable",
+      "Social Media Marketing",
+      "Burp Suite",
+      "Metasploit",
+      "Nmap",
+      "Wireshark",
+      "OWASP",
+    ],
+  },
+  contact: {
+    description:
+      "Ready to secure your digital assets? Let's connect and discuss how I can help protect your organization.",
+    email: "borhahitesh@gmail.com",
+    social: [
+      {
+        name: "LinkedIn",
+        icon: "fab fa-linkedin",
+        url: "https://linkedin.com/in/hitesh-borha-s-1a1703194",
+        display: "LinkedIn",
+      },
+      {
+        name: "GitHub",
+        icon: "fab fa-github",
+        url: "https://github.com/hitesh114",
+        display: "GitHub",
+      },
+      {
+        name: "Instagram",
+        icon: "fab fa-instagram",
+        url: "https://instagram.com/hiteshjain._",
+        display: "Instagram",
+      },
+    ],
+  },
+  navigation: [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Certifications", href: "#certifications" },
+    { name: "Contact", href: "#contact" },
+  ],
+  footer: {
+    copyright: "2025 S Hitesh Borha. Built with passion for cybersecurity.",
+    links: [
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms of Service", href: "#" },
+    ],
+  },
+};

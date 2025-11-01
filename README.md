@@ -1,4 +1,4 @@
-# > echo "Hello, I’m Hitesh — a Cybersecurity Enthusiast 🧑‍💻
+# > echo "Hello, I’m Hitesh — a Cybersecurity Enthusiast 🧑‍💻"
 
 ## Design Description
 

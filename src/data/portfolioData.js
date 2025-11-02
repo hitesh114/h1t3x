@@ -108,16 +108,49 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "VulnScanner Pro",
+      title: "Smart Voting Machine",
       description:
-        "Advanced vulnerability scanner with custom exploit modules and automated reporting capabilities.",
+        "Developed a Smart Voting System using Python, AI tools, and pre-defined models to enhance data confidentiality, integrity, and voter verification—achieving 0% data breaches and reducing voter fraud risk by 40%.",
       image: {
         type: "icon",
-        src: "fa-solid fa-shield-halved",
-        alt: "VulnScanner Pro Screenshot",
+        src: "fa-solid fa-square-poll-vertical",
+        alt: "DDoS Detection System",
       },
-      technologies: ["Python", "Nmap", "SQLMap"],
-      links: { live: "#", github: "#" },
+      technologies: ["Python", "AI Tools", "Pre-Defined Models"],
+      links: {
+        live: "#",
+        github: "#",
+      },
+    },
+    {
+      title: "DDoS Detection System",
+      description:
+        "Developed a Context Correlation-Aware ML model using Python and AI tools for IoT-based DDoS detection, achieving 95% accuracy, 30% fewer false positives, and 25% faster response time.",
+      image: {
+        type: "icon",
+        src: "fa-solid fa-shield-virus",
+        alt: "DDoS Detection System",
+      },
+      technologies: ["Python", "IoT", "ML Models", "AI Tools"],
+      links: {
+        live: "https://drive.google.com/drive/folders/10zlsmamrjbKo8lbKd04r1yjOCsbYGxfc",
+        github: "https://github.com/hitesh114/ddos-detection-system.git",
+      },
+    },
+    {
+      title: "Customizable Website Framework",
+      description:
+        "Developed a responsive, reusable website framework using React JS, HTML5, and CSS3, collaborating in an Agile team via Slack and Bitbucket for version control, testing, and debugging to ensure high-quality code.",
+      image: {
+        type: "icon",
+        src: "fa-regular fa-window-restore",
+        alt: "Customizable Website Framework",
+      },
+      technologies: ["React JS", "HTML5", "CSS3"],
+      links: {
+        live: "",
+        github: "https://github.com/hitesh114/Customizable-Website-Framework",
+      },
     },
   ],
   skills: {

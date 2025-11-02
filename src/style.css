@@ -1190,15 +1190,22 @@ body {
     height: 200px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-placeholder {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     background: var(--secondary-dark);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid var(--neon-cyan);
+    flex-shrink: 0;
 }
 
 .project-placeholder i {

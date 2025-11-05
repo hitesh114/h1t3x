@@ -111,7 +111,7 @@ export const portfolioData = {
         "https://drive.google.com/file/d/1m-W-HatRmfQ0xGe6JJWT9zUyq4yHW4ln/view",
     },
     {
-      name: "Domain 1: ISecurity Principles, ",
+      name: "Domain 1: Security Principles, ",
       organization: "ISC2",
       dateObtained: "2024",
       expirationDate: "",

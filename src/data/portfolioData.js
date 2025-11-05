@@ -97,6 +97,32 @@ export const portfolioData = {
       certificationLink:
         "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
     },
+    {
+      name: "Domain 2: Incident Response, ",
+      organization: "ISC2",
+      dateObtained: "2024",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "assets/images/IS2.jpg",
+        alt: "Cybersecurity Certification Badge",
+      },
+      certificationLink:
+        "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
+    },
+    {
+      name: "Domain 1: ISecurity Principles, ",
+      organization: "ISC2",
+      dateObtained: "2024",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "assets/images/IS2.jpg",
+        alt: "Cybersecurity Certification Badge",
+      },
+      certificationLink:
+        "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
+    },
   ],
   terminalCommands: [
     "cat /etc/passwd",

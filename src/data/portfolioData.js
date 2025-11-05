@@ -108,7 +108,7 @@ export const portfolioData = {
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
-        "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
+        "https://drive.google.com/file/d/1m-W-HatRmfQ0xGe6JJWT9zUyq4yHW4ln/view",
     },
     {
       name: "Domain 1: ISecurity Principles, ",
@@ -121,7 +121,7 @@ export const portfolioData = {
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
-        "https://coursera.org/share/14de7bae28321dc256ac108a1b4d6f94",
+        "https://drive.google.com/file/d/1Rrf-eXysCdVVWbKm5uKtDaZppdy73m9G/view",
     },
   ],
   terminalCommands: [

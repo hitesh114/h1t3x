@@ -104,7 +104,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/IS2.jpg",
+        src: "assets/images/IS2.jpeg",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
@@ -117,7 +117,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/IS2.jpg",
+        src: "assets/images/IS2.jpeg",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:

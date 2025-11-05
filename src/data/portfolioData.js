@@ -152,6 +152,21 @@ export const portfolioData = {
         github: "https://github.com/hitesh114/Customizable-Website-Framework",
       },
     },
+    {
+      title: "H1t3x",
+      description:
+        "As part of my work in front-end development, I designed and built H1t3x, an interactive web application focused on delivering responsive and user-friendly experiences. Leveraging React.js, I implemented modular components and maintained clean code architecture to ensure scalability and maintainability.",
+      image: {
+        type: "img",
+        src: "assets/images/Logo_1.png",
+        alt: "Customizable Website Framework",
+      },
+      technologies: ["React JS", "HTML5", "CSS3"],
+      links: {
+        live: "https://hitesh114.github.io/h1t3x/",
+        github: "https://github.com/hitesh114/h1t3x.git",
+      },
+    },
   ],
   skills: {
     categoryTitle: "Top Skills",

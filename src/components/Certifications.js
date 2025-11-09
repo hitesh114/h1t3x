@@ -18,7 +18,7 @@ const Certifications = ({ data }) => {
                     <i className={cert.badge.src}></i>
                   ) : (
                     <img
-                      src={cert.badge.src}
+                      src={process.env.PUBLIC_URL + cert.badge.src}
                       alt={cert.badge.alt}
                       style={{
                         width: "100%",

@@ -62,7 +62,7 @@ const Projects = ({ data }) => {
                     <i className={project.image.src}></i>
                   ) : (
                     <img
-                      src={project.image.src}
+                      src={process.env.PUBLIC_URL + project.image.src}
                       alt={project.image.alt}
                       style={{
                         width: "100%",

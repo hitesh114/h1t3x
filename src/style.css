@@ -976,6 +976,74 @@ body {
     line-height: 1.7;
 }
 
+.resume-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--neon-cyan);
+}
+
+.resume-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-normal);
+    z-index: -1;
+}
+
+.resume-btn:hover::before {
+    left: 0;
+}
+
+.view-btn {
+    background: transparent;
+    color: var(--neon-cyan);
+}
+
+.view-btn::before {
+    background: var(--neon-cyan);
+}
+
+.view-btn:hover {
+    color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.download-btn {
+    background: var(--neon-cyan);
+    color: var(--primary-dark);
+}
+
+.download-btn::before {
+    background: var(--neon-cyan-bright);
+}
+
+.download-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.resume-btn i {
+    font-size: 1rem;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1834,6 +1902,15 @@ body {
     .about-stats {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    
+    .resume-buttons {
+        flex-direction: column;
+    }
+    
+    .resume-btn {
+        justify-content: center;
+        width: 100%;
     }
     
     .tag-cloud {

@@ -9,12 +9,37 @@ export const portfolioData = {
     ],
     avatar: {
       type: "image",
-      src: "assets/images/avatar1.png",
+      src: "/assets/images/avatar1.png",
       alt: "Hitesh Borha Profile Picture",
     },
     stats: [],
   },
   experience: [
+    {
+      title: "Security Operations & Lab Practice (Self-Driven)",
+      company: "TryHackMe & HackTheBox Labs",
+      duration: "2025 - Ongoing",
+      location: "Remote",
+      description: [
+        "Hands-on experience in threat detection, log analysis, privilege escalation, web exploitation, and offensive security techniques.",
+        " Practiced CTI-based investigations, network reconnaissance, and vulnerability exploitation scenarios.",
+        "Completed labs on SIEM alert triage, Linux privilege escalation, and Windows Active Directory attack paths.",
+        "Building consistent Blue Team + Red Team capability with real-world scenarios.",
+      ],
+      technologies: [
+        "Vulnerability Scanning & Report Writing",
+        "Security Operations Center",
+        "Malware Behavior & IOC Identification",
+        "Incident Response Workflow",
+        "Privilege Escalation Techniques",
+        "Active Directory Enumeration & Attack Paths",
+        "Network Traffic Analysis",
+        "Threat Detection & Log Analysis",
+        "Linux & Windows System Hardening",
+        "Web Application Security Testing",
+        "SIEM Monitoring & Alert Investigation",
+      ],
+    },
     {
       title: "Junior Software Engineer",
       company: "EappZ",
@@ -36,28 +61,21 @@ export const portfolioData = {
         "HTML5",
       ],
     },
-    {
-      title: "City Lead",
-      company: "Viral Fisson",
-      duration: "2023 - 2024",
-      location: "Remote",
-      description: [
-        "Led a city-wide team of 200+ student creators to execute brand promotion campaigns for top national and international brands.",
-        "Strategized and coordinated digital and on-ground marketing campaigns, driving high engagement and ROI for partner brands.",
-        "Managed campaign logistics, creator communication, and performance tracking using tools like Microsoft Excel, ensuring seamless execution.",
-        "Recognized with the Best Performing City Award for outstanding leadership, team coordination, and campaign success.",
-        "Built and nurtured a strong creator community, fostering collaboration, creativity, and measurable impact in the youth marketing space.",
-      ],
-      technologies: [
-        "Communication",
-        "Leadership",
-        "Public Speaking",
-        "Easily Adaptable",
-        "Social Media Marketing",
-      ],
-    },
   ],
   certifications: [
+    {
+      name: "Tata Cybersecurity Security Analyst Job Simulation",
+      organization: "Forage",
+      dateObtained: "2025",
+      expirationDate: "",
+      badge: {
+        type: "img",
+        src: "/assets/images/theforage_icon.jpg",
+        alt: "Cybersecurity Security Analyst Job Simulation",
+      },
+      certificationLink:
+        "https://drive.google.com/file/d/1Um1ib5IRdfmm2ELWaCOKSc8S_3Tqo5i1/view",
+    },
     {
       name: "Networking Basics",
       organization: "CISCO",
@@ -65,7 +83,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/Networking_Basics_Badge.png",
+        src: "/assets/images/Networking_Basics_Badge.png",
         alt: "Networking_Basics_Badge",
       },
       certificationLink:
@@ -78,7 +96,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/Intro_cs.png",
+        src: "/assets/images/Intro_cs.png",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
@@ -91,7 +109,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/Google_icon.jpg",
+        src: "/assets/images/Google_icon.jpg",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
@@ -104,7 +122,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/IS2.jpeg",
+        src: "/assets/images/IS2.jpeg",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
@@ -117,7 +135,7 @@ export const portfolioData = {
       expirationDate: "",
       badge: {
         type: "img",
-        src: "assets/images/IS2.jpeg",
+        src: "/assets/images/IS2.jpeg",
         alt: "Cybersecurity Certification Badge",
       },
       certificationLink:
@@ -184,7 +202,7 @@ export const portfolioData = {
         "As part of my work in front-end development, I designed and built H1t3x, an interactive web application focused on delivering responsive and user-friendly experiences. Leveraging React.js, I implemented modular components and maintained clean code architecture to ensure scalability and maintainability.",
       image: {
         type: "img",
-        src: "assets/images/Logo_1.png",
+        src: "/assets/images/Logo_1.png",
         alt: "Customizable Website Framework",
       },
       technologies: ["React JS", "HTML5", "CSS3"],

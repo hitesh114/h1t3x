@@ -248,7 +248,7 @@ export const portfolioData = {
       {
         name: "LinkedIn",
         icon: "fab fa-linkedin",
-        url: "https://linkedin.com/in/hitesh-borha-s-1a1703194",
+        url: "https://www.linkedin.com/in/s-hitesh-borha-1a1703194/",
         display: "LinkedIn",
       },
       {

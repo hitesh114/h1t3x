@@ -1,42 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Navigation = ({ data }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(data[0].href);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const getIcon = (name) => {
+    switch(name.toLowerCase()) {
+      case 'home': return 'fas fa-home';
+      case 'about': return 'fas fa-user';
+      case 'experience': return 'fas fa-briefcase';
+      case 'skills': return 'fas fa-code';
+      case 'projects': return 'fas fa-laptop-code';
+      case 'certifications': return 'fas fa-certificate';
+      case 'contact': return 'fas fa-envelope';
+      default: return 'fas fa-dot-circle';
+    }
+  };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="nav-container">
-        <div className="nav-logo">
-          <span className="logo-text">&lt;/&gt;</span>
-        </div>
-        <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-          {data.map((item, index) => (
-            <li key={index} className="nav-item">
-              <a href={item.href} className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div 
-          className={`nav-toggle ${isMobileMenuOpen ? 'active' : ''}`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+    <nav className="floating-dock">
+      {data.map((item, index) => (
+        <a 
+          key={index} 
+          href={item.href} 
+          className={`dock-link ${activeItem === item.href ? 'active' : ''}`}
+          onClick={() => setActiveItem(item.href)}
+          title={item.name}
         >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-      </div>
+          <i className={getIcon(item.name)} style={{ fontSize: '1.25rem' }}></i>
+        </a>
+      ))}
     </nav>
   );
 };

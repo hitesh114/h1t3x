@@ -1,67 +1,48 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Contact = ({ data }) => {
   return (
-    <section id="contact" className="contact">
-      <div className="container">
-        <div className="section-header">
-          <h2 className="section-title glitch" data-text="Contact">Contact</h2>
-        </div>
-        <div className="contact-content">
-          <div className="contact-info">
-            <p className="contact-description">{data.description}</p>
-            <div className="contact-methods">
-              <div className="contact-method">
-                <i className="fas fa-envelope"></i>
-                <a href={`mailto:${data.email}`} style={{ color: '#00ffff', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = '#64ffda'} onMouseLeave={(e) => e.target.style.color = '#00ffff'}>{data.email}</a>
-              </div>
-              {data.social.map((social, index) => (
-                <div key={index} className="contact-method">
-                  <i className={social.icon}></i>
-                  <a href={social.url} target="_blank" rel="noopener noreferrer" style={{ color: '#00ffff', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = '#64ffda'} onMouseLeave={(e) => e.target.style.color = '#00ffff'}>
-                    {social.display}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="contact-terminal">
-            <div className="terminal-window small">
-              <div className="terminal-header">
-                <div className="terminal-buttons">
-                  <span className="btn close"></span>
-                  <span className="btn minimize"></span>
-                  <span className="btn maximize"></span>
-                </div>
-                <div className="terminal-title">contact.sh</div>
-              </div>
-              <div className="terminal-body">
-                <div className="terminal-line">
-                  <span className="prompt">$</span>
-                  <span className="command">./contact.sh --email</span>
-                </div>
-                <div className="terminal-output">
-                  <span className="success">
-                    ✓ Email: <a href={`mailto:${data.email}`} style={{ color: '#00ffff', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = '#64ffda'} onMouseLeave={(e) => e.target.style.color = '#00ffff'}>{data.email}</a>
-                  </span>
-                </div>
-                <div className="terminal-line">
-                  <span className="prompt">$</span>
-                  <span className="command">./contact.sh --social</span>
-                </div>
-                <div className="terminal-output">
-                  {data.social.map((social, index) => (
-                    <div key={index} className="success">
-                      ✓ {social.name}: <a href={social.url} target="_blank" rel="noopener noreferrer" style={{ color: '#00ffff', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = '#64ffda'} onMouseLeave={(e) => e.target.style.color = '#00ffff'}>{social.display}</a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div id="contact">
+      <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
+        <h3 className="label-md" style={{ marginBottom: '0.5rem' }}>{"// Transmission"}</h3>
+        <h2 className="display-lg" style={{ fontSize: '2.5rem' }}>Establish Connection</h2>
       </div>
-    </section>
+
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="glass-card" 
+        style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center', padding: '3rem 2rem' }}
+      >
+        <div style={{ width: '5rem', height: '5rem', borderRadius: '50%', backgroundColor: 'rgba(199, 153, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', fontSize: '2rem', margin: '0 auto 2rem auto', boxShadow: '0 0 20px rgba(199, 153, 255, 0.2)' }}>
+          <i className="fas fa-satellite-dish"></i>
+        </div>
+        
+        <p className="text-body" style={{ color: 'var(--on-surface-variant)', fontSize: '1.125rem', marginBottom: '2.5rem' }}>
+          {data.description || "My transmission channels are always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"}
+        </p>
+        
+        <a href={`mailto:${data.email}`} className="btn-neon" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem', padding: '1rem 2.5rem', marginBottom: '1rem', textDecoration: 'none' }}>
+          <i className="fas fa-envelope"></i> Send Email
+        </a>
+        <div style={{ color: 'var(--on-surface-variant)', fontSize: '0.875rem', marginBottom: '3rem' }}>
+          or reach out directly to <span style={{ color: 'var(--primary)', fontWeight: 500 }}>{data.email}</span>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '1rem' }}>
+          {data.social && data.social.map((platform, index) => (
+            platform.url && platform.url !== "#" && (
+              <a key={index} href={platform.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--on-surface-variant)', fontSize: '1.75rem', transition: 'color 0.3s, transform 0.3s' }} onMouseEnter={(e)=>{e.target.style.color='var(--primary)'; e.target.style.transform='translateY(-3px)'}} onMouseLeave={(e)=>{e.target.style.color='var(--on-surface-variant)'; e.target.style.transform='translateY(0)'}} title={platform.display}>
+                <i className={platform.icon}></i>
+              </a>
+            )
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

@@ -275,7 +275,7 @@ export const portfolioData = {
     { name: "Contact", href: "#contact" },
   ],
   footer: {
-    copyright: "2025 S Hitesh Borha. Built with passion for cybersecurity.",
+    copyright: "2026 S Hitesh Borha. Built with passion for cybersecurity.",
     links: [
       { name: "Privacy Policy", href: "#" },
       { name: "Terms of Service", href: "#" },
